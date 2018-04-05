@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PacMan</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <div class="header--left">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="header--center">
+            <div class="header--center--images">
+
+                <div class="header--center--images--image">
+                    <img src="./images/pacman.png" alt="">
+                </div>
+                <div class="header--center--images--image">
+                    <img src="./images/blue.png" alt="">
+                </div>
+                <div class="header--center--images--image">
+                    <img src="./images/orange.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="header--right">
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+    </header>
+
+    <!-- End Header Section  -->
+
+    <section class="hero-container">
+        <div class="hero-container-images">
+            <div class="hero-container-images--image">
+                <img src="./images/cherry.png" alt="">
+            </div>
+            <div class="hero-container-images--image">
+                <img src="./images/strawberry.png" alt="">
+            </div>
+            <div class="hero-container-images--image">
+                <img src="./images/apple.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="text">
+        <div class="text__block">
+            <div class="text__block--left">
+                <h2 id="textContent">Try Our Apples</h2>
+            </div>
+            <div class="text__block--center">
+                <img src="./images/apple.png" alt="" id="p1">
+            </div>
+            <div class="text__block--right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex reiciendis voluptatum soluta corporis iusto iure
+                    quos qui dolor quisquam sunt, commodi labore quod aut suscipit, quibusdam illum minima totam et!</p>
+            </div>
+        </div>
+        <div class="text__block">
+            <div class="text__block--left">
+                <h2 id="textContent">Try Our Cherries</h2>
+            </div>
+            <div class="text__block--center">
+                <img src="./images/cherry.png" alt="" id="p1">
+            </div>
+            <div class="text__block--right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi possimus illum rem fuga eius quo delectus
+                    nisi sunt cum ea laboriosam doloribus recusandae, corrupti in maiores iusto. Libero, unde? Eaque!</p>
+            </div>
+        </div>
+        <div class="text__block">
+            <div class="text__block--left">
+                <h2 id="textContent">Try Our Strawberries</h2>
+            </div>
+            <div class="text__block--center">
+                <img src="./images/strawberry.png" alt="" id="p1" ondragover="dragStart(event)">
+            </div>
+            <div class="text__block--right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati molestiae, vero et maiores pariatur sit
+                    quia totam veritatis dignissimos possimus officiis nihil. Autem quo recusandae, fuga quos at earum molestias.</p>
+            </div>
+        </div>
+
+        <audio src="./images/pacman_eatfruit.wav" id="myAudio"></audio>
+
+
+    </section>
+
+    <div class="drop-container">
+        <div class="dropZone" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img src="./images/shopping-cart.svg" alt="">
+        </div>
+    </div>
+
+</body>
+
+<script src="./js/main.js"></script>
+
+</html>

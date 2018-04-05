@@ -1,0 +1,135 @@
+body {
+  background-color: antiquewhite;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Press Start 2P', cursive; }
+
+header {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.header--center--images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .header--center--images--image {
+    padding: 1rem; }
+
+button {
+  height: 2rem;
+  width: 2rem; }
+
+.hero-container {
+  background-image: url("https://www.mikesarcade.com/arcade/images/pacpix/pac-split.jpg");
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.hero-container-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .hero-container-images--image {
+    padding: 1rem;
+    -webkit-filter: drop-shadow(16px 16px 10px black);
+    filter: drop-shadow(16px 16px 10px black); }
+
+.text {
+  height: 100vh;
+  background-color: antiquewhite; }
+  .text__block {
+    height: calc(100vh / 3);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .text__block--left, .text__block--center, .text__block--right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .text__block--left h2,
+      .text__block--left p, .text__block--center h2,
+      .text__block--center p, .text__block--right h2,
+      .text__block--right p {
+        text-align: center; }
+
+.active {
+  -webkit-animation: bounce 4s;
+  animation: bounce 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+.text__block--center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+  .text__block--center img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+
+.drop-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.dropZone {
+  height: 30vh;
+  width: 50vw; }
+  .dropZone img {
+    width: 100%;
+    height: 100%; }
+
+@-webkit-keyframes bounce {
+  0% {
+    color: red; }
+  50% {
+    color: black; }
+  100% {
+    color: yellow; } }
+@keyframes bounce {
+  0% {
+    color: red; }
+  50% {
+    color: black; }
+  100% {
+    color: yellow; } }
+
+/*# sourceMappingURL=style.css.map */
