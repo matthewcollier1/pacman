@@ -1,4 +1,5 @@
 let dummyText = document.querySelectorAll('h2');
+let shopCart = document.getElementById('shopping')
 
 dummyText.forEach((h2) => {
 	h2.addEventListener('mouseover', (e) => {
